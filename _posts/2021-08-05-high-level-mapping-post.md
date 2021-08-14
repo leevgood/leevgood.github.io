@@ -56,8 +56,12 @@ name을 따로 지정하지 않는다면 테이블의 이름이 자동으로 지
 간단한 테이블과 연관관계로 구성되어 있을 경우 사용하면 효과적이다. 모든 속성들이 한 테이블에 들어있기 때문에 관리가 매우 편리하다.
 
 해당 전략 또한
+
+```java
 @Inheritance(strategy=InheritanceType.XXX)
 @DiscriminatorColumn(name=“DTYPE”)
+```
+
 를 사용하여 구현이 가능하다.
 
 단일 테이블 전략의 장점
